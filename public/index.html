@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Random Tarot Card</title>
+  <meta name="description" content="Pick a tarot card for daily guidance, advice, and introspection">
+  <meta property="og:title" content="Random Tarot Card" />
+  <meta property="og:image" content="RoseLilyRed.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  </style>
+
+</head>
+
+<body>
+  <!-- https://www.geeksforgeeks.org/hosting-a-static-website-on-firebase-for-free/ -->
+  <script src="Randomizer.js">
+  </script>
+  <canvas id="myCanvas" width="201" height="349" style="border:1px solid #d3d3d3;" hidden=""></canvas>
+
+  <img id="rose" src="RoseLilyRed.jpg" onclick="showCard()" />
+
+  <div class="a">
+    <p>Tap the card to be guided by the intuitive powers of the tarot.</p>
+
+    <p>You can use the card as a daily horoscope, guidance through a difficult decision, an aid to introspection, or
+      as
+      an easy way to learn the meanings of the cards and improve your tarot reading abilities.</p>
+  </div>
+  <div class="ad">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Testhorizontalmain -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6890691947221885" data-ad-slot="4310044477"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+  <div class="IndexLinkBox">
+    <p>The Major Arcana</p>
+    <p><a href="https://randomtarotcard.com/TheFool.html">The Fool</a> *
+      <a href="https://randomtarotcard.com/TheMagician.html">The Magician</a> *
+      <a href="https://randomtarotcard.com/TheHighPriestess.html">The High Priestess</a> *
+      <a href="https://randomtarotcard.com/TheEmpress.html">The Empress</a> *
+      <a href="https://randomtarotcard.com/TheEmperor.html">The Emperor</a> *
+      <a href="https://randomtarotcard.com/TheHierophant.html">The Hierophant</a> *
+      <a href="https://randomtarotcard.com/TheLovers.html">The Lovers</a> *
+      <a href="https://randomtarotcard.com/TheChariot.html">The Chariot</a> *
+      <a href="https://randomtarotcard.com/Strength.html">Strength</a> *
+      <a href="https://randomtarotcard.com/TheHermit.html">The Hermit</a> *
+      <a href="https://randomtarotcard.com/WheelofFortune.html">Wheel of Fortune</a> *
+      <a href="https://randomtarotcard.com/Justice.html">Justice</a> *
+      <a href="https://randomtarotcard.com/TheHangedMan.html">The Hanged Man</a> *
+      <a href="https://randomtarotcard.com/Death.html">Death</a> *
+      <a href="https://randomtarotcard.com/Temperance.html">Temperance</a> *
+      <a href="https://randomtarotcard.com/TheDevil.html">The Devil</a> *
+      <a href="https://randomtarotcard.com/TheTower.html">The Tower</a> *
+      <a href="https://randomtarotcard.com/TheStar.html">The Star</a> *
+      <a href="https://randomtarotcard.com/TheMoon.html">The Moon</a> *
+      <a href="https://randomtarotcard.com/TheSun.html">The Sun</a> *
+      <a href="https://randomtarotcard.com/Judgement.html">Judgement</a> *
+      <a href="https://randomtarotcard.com/TheWorld.html">The World</a>
+    </p>
+    <p>The Major Arcana comprises the twenty-two face cards of the tarot deck. In the future I will add the Minor
+      Arcana, the fifty-six suit cards of the deck, as well as reversals.
+    </p>
+  </div>
+  <div class="Footer">
+    <p><a href="https://randomtarotcard.com/privacy.html" style="text-decoration:none;">Privacy</a> <a
+        href="https://randomtarotcard.com/contact.html" style="text-decoration:none;">Contact</a> <a
+        href="https://randomtarotcard.com/about.html" style="text-decoration:none;">About</a></p>
+
+  </div>
+
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCyc77Bq4Jmi7c6bXBnEOgpXihXfNj5kOE",
+      authDomain: "dream-tarot.firebaseapp.com",
+      projectId: "dream-tarot",
+      storageBucket: "dream-tarot.appspot.com",
+      messagingSenderId: "380998942530",
+      appId: "1:380998942530:web:82dd936062b90b92a6d2db",
+      measurementId: "G-LESF3WDYLV"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+</body>
+
+</html>
